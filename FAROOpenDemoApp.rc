@@ -1,0 +1,234 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FAROOpenDemoApp"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FARO Open Demo Application Version 1.0",IDC_STATIC,40,10,133,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FAROOPENDEMOAPP_DIALOG DIALOGEX 0, 0, 392, 301
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FAROOpenDemoApp"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,332,7,50,14
+    LTEXT           "Interface Version:",IDC_STATIC,7,9,56,8
+    LTEXT           "4.X.X.X",IDC_VERSION_STR,71,9,91,8
+    LTEXT           "FARO Workspace:",IDC_STATIC,7,48,61,8
+    EDITTEXT        IDC_WORKSPACE,84,46,102,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BROWSE,192,45,50,14
+    PUSHBUTTON      "Load",IDC_LOAD_WSP,248,45,50,14
+    LTEXT           "Number of scans:",IDC_STATIC,7,70,56,8
+    LTEXT           "0",IDC_NUM_SCANS,74,70,27,8
+    LTEXT           "#Rows:",IDC_STATIC,24,108,26,8
+    LTEXT           "0",IDC_NUM_ROWS,74,108,27,8
+    LTEXT           "#Cols",IDC_STATIC,24,124,19,8
+    LTEXT           "0",IDC_NUM_COLS,74,124,27,8
+    LTEXT           "Selected:",IDC_STATIC,24,91,31,8
+    LTEXT           "0",IDC_SCAN_NO,74,91,27,8
+    CONTROL         "",IDC_SPIN_SCANS,"msctls_updown32",UDS_ARROWKEYS,104,89,10,14
+    PUSHBUTTON      "Load",IDC_LOAD_SCAN,131,89,50,14
+    PUSHBUTTON      "Unload",IDC_UNLOAD_SCAN,189,89,50,14
+    CONTROL         "",IDC_ACCESS_PROGRESS,"msctls_progress32",WS_BORDER,205,142,110,12
+    PUSHBUTTON      "Access scan data (1)",IDC_ACCESS_SCAN,28,141,77,14
+    LTEXT           "Automation data: ",IDC_AUTOMATION_INFO,18,163,190,8
+    EDITTEXT        IDC_TRIGGER_NR,90,196,40,14,ES_AUTOHSCROLL
+    LTEXT           "#CAN Message",IDC_STATIC,7,177,64,13
+    LTEXT           "#Trigger",IDC_STATIC,7,198,64,12
+    EDITTEXT        IDC_MESSAGE_NR,90,176,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Get",IDC_GET_MESSAGE,133,176,37,14
+    PUSHBUTTON      "Get",IDC_GET_TRIGGER,133,196,37,14
+    LTEXT           "-",IDC_MESSAGE_TXT,177,176,153,20
+    LTEXT           "-",IDC_TRIGGER_TXT,177,198,153,12
+    LTEXT           "Aut.Time at c,r",IDC_STATIC,7,220,52,8
+    EDITTEXT        IDC_EDIT_AUTOM_COL,75,217,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AUTOM_ROW,102,217,28,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Get",IDC_BUTTON1,133,217,37,14
+    LTEXT           "Static",IDC_STATIC_ATIME_OF_SCANPOINT,177,219,212,14
+    LTEXT           "Scan point at",IDC_STATIC,7,238,63,8
+    EDITTEXT        IDC_EDIT_AUTOMATION_TIME_TO_SCANPOINT,75,236,55,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Get",IDC_BUTTON2,133,236,37,14
+    LTEXT           "Static",IDC_STATIC_SCAN_POINT_COORDS,177,238,212,14
+    PUSHBUTTON      "Access automation data",IDC_AUTOMATION_TEST,51,257,79,14
+    PUSHBUTTON      "Access scan data (2)",IDC_ACCESS_SCAN2,115,141,77,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "FARO Open Demo Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "FAROOpenDemoApp"
+            VALUE "LegalCopyright", "Copyright (C) 2011"
+            VALUE "OriginalFilename", "FAROOpenDemoApp.exe"
+            VALUE "ProductName", "FARO Open Demo Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FAROOpenDemoApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\FAROOpenDemoApp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_FAROOPENDEMOAPP_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 339
+        VERTGUIDE, 28
+        VERTGUIDE, 116
+        VERTGUIDE, 120
+        VERTGUIDE, 157
+        VERTGUIDE, 162
+        BOTTOMMARGIN, 293
+        HORZGUIDE, 190
+        HORZGUIDE, 196
+        HORZGUIDE, 210
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE Init Failed"
+    IDS_ABOUTBOX            "About FAROOpenDemoApp..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\FAROOpenDemoApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.deu\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
